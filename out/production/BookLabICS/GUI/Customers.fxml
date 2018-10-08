@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CustomersController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="690.0" prefWidth="1200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="300.0" layoutY="14.0" prefHeight="47.0" prefWidth="199.0" text="Customers" underline="true">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="34.0" layoutY="175.0" prefHeight="350.0" prefWidth="351.0">
+               <children>
+                  <TableView fx:id="table" editable="true" layoutX="1.0" layoutY="1.0" prefHeight="350.0" prefWidth="350.0">
+                    <columns>
+                      <TableColumn fx:id="cid" prefWidth="97.0" text="CustomerID" />
+                      <TableColumn fx:id="name" prefWidth="130.0" text="Customer Name" />
+                        <TableColumn fx:id="tel" minWidth="6.0" prefWidth="53.0" text="TP Number" />
+                        <TableColumn fx:id="bal" prefWidth="68.0" text="Balance" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="34.0" layoutY="76.0" text="Search ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSearch" layoutX="83.0" layoutY="74.0" prefHeight="26.0" prefWidth="142.0" />
+            <AnchorPane layoutX="462.0" layoutY="105.0" prefHeight="47.0" prefWidth="260.0">
+               <children>
+                  <JFXButton fx:id="RegisterButton" layoutY="9.0" prefHeight="32.0" prefWidth="80.0" text="Register" />
+                  <JFXButton fx:id="EditButton" layoutX="93.0" layoutY="9.0" prefHeight="32.0" prefWidth="70.0" text="Edit" />
+                  <JFXButton fx:id="deleteButton" layoutX="176.0" layoutY="9.0" prefHeight="32.0" prefWidth="80.0" text="Remove" />
+               </children>
+            </AnchorPane>
+            <JFXComboBox fx:id="com" layoutX="256.0" layoutY="72.0" prefHeight="28.0" prefWidth="115.0" promptText="Search by" />
+            <JFXButton fx:id="searchButton" layoutX="34.0" layoutY="120.0" prefHeight="32.0" prefWidth="70.0" text="Search" />
+            <AnchorPane layoutX="462.0" layoutY="175.0" prefHeight="302.0" prefWidth="260.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="40.0" text="CID :" />
+                  <Label layoutX="20.0" layoutY="80.0" text="Name :" />
+                  <Label layoutX="20.0" layoutY="200.0" text="Address :" />
+                  <Label layoutX="20.0" layoutY="160.0" text="TelNo :" />
+                  <Label layoutX="20.0" layoutY="240.0" text="Balance :" />
+                  <Label layoutX="20.0" layoutY="120.0" text="NIC :" />
+                  <JFXTextField fx:id="txtName" focusColor="#2316c4" layoutX="80.0" layoutY="70.0" prefHeight="26.0" prefWidth="173.0" unFocusColor="#727171" />
+                  <JFXTextField fx:id="txtBal" focusColor="#2316c4" layoutX="80.0" layoutY="230.0" prefHeight="26.0" prefWidth="173.0" unFocusColor="#727171" />
+                  <JFXTextField fx:id="txtAddress" focusColor="#2316c4" layoutX="80.0" layoutY="190.0" prefHeight="26.0" prefWidth="173.0" unFocusColor="#727171" />
+                  <JFXTextField fx:id="txtCid" focusColor="#2316c4" layoutX="80.0" layoutY="30.0" prefHeight="26.0" prefWidth="173.0" unFocusColor="#727171" />
+                  <JFXTextField fx:id="txtTel" focusColor="#2316c4" layoutX="80.0" layoutY="150.0" prefHeight="26.0" prefWidth="173.0" unFocusColor="#727171" />
+                  <JFXTextField fx:id="txtNic" focusColor="#2316c4" layoutX="80.0" layoutY="110.0" prefHeight="26.0" prefWidth="173.0" unFocusColor="#727171" />
+               </children>
+            </AnchorPane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

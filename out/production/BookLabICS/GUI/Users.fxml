@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1200.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.UserCtl">
+   <children>
+      <Label layoutX="619.0" layoutY="14.0" prefHeight="47.0" prefWidth="115.0" styleClass="title" stylesheets="@style.css" text="Users" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="30.0" layoutY="175.0" prefHeight="395.0" prefWidth="620.0">
+         <children>
+            <TableView fx:id="tblUsers" editable="true" layoutX="7.0" prefHeight="406.0" prefWidth="620.0">
+               <columns>
+                  <TableColumn fx:id="uid" prefWidth="81.0" text="User ID" />
+                  <TableColumn fx:id="uname" prefWidth="152.0" text="User Name" />
+                  <TableColumn fx:id="utp" minWidth="6.0" prefWidth="198.0" text="TP Number" />
+                  <TableColumn fx:id="uemail" prefWidth="187.0" text="E-mail" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="676.0" layoutY="112.0" prefHeight="47.0" prefWidth="300.0">
+         <children>
+            <JFXButton fx:id="btnRegister" layoutY="9.0" prefHeight="32.0" prefWidth="89.0" text="Register" />
+            <JFXButton fx:id="btnEdit" layoutX="115.0" layoutY="9.0" prefHeight="32.0" prefWidth="70.0" text="Edit" />
+            <JFXButton fx:id="btnRemove" layoutX="199.0" layoutY="9.0" prefHeight="32.0" prefWidth="101.0" text="Remove">
+               <ripplerFill>
+                  <RadialGradient centerX="0.48333333333333334" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#1618b5" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="676.0" layoutY="181.0" prefHeight="395.0" prefWidth="404.0">
+         <children>
+            <Label layoutX="20.0" layoutY="40.0" text="User ID :" />
+            <Label layoutX="20.0" layoutY="80.0" text="Name :" />
+            <Label layoutX="20.0" layoutY="240.0" text="Address :" />
+            <Label layoutX="20.0" layoutY="160.0" text="TelNo :" />
+            <Label layoutX="20.0" layoutY="200.0" text="NIC No :" />
+            <Label layoutX="20.0" layoutY="120.0" text="Email :" />
+            <JFXTextField fx:id="txtID" focusColor="#2316c4" layoutX="108.0" layoutY="36.0" prefHeight="26.0" prefWidth="270.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="txtName" focusColor="#2316c4" layoutX="108.0" layoutY="76.0" prefHeight="26.0" prefWidth="270.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="txtEmail" focusColor="#2316c4" layoutX="108.0" layoutY="116.0" prefHeight="26.0" prefWidth="270.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="txtTelNo" focusColor="#2316c4" layoutX="108.0" layoutY="156.0" prefHeight="26.0" prefWidth="270.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="txtNIC" focusColor="#2316c4" layoutX="108.0" layoutY="196.0" prefHeight="26.0" prefWidth="270.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="txtAdd" focusColor="#2316c4" layoutX="108.0" layoutY="236.0" prefHeight="26.0" prefWidth="270.0" unFocusColor="#727171" />
+            <Label layoutX="20.0" layoutY="279.0" text="Type :" />
+            <JFXTextField fx:id="txtType" focusColor="#2316c4" layoutX="108.0" layoutY="275.0" prefHeight="26.0" prefWidth="270.0" unFocusColor="#727171" />
+            <JFXButton fx:id="btnSave" layoutX="190.0" layoutY="336.0" prefHeight="32.0" prefWidth="89.0" text="Save" />
+            <JFXButton fx:id="btnCancel" layoutX="305.0" layoutY="336.0" prefHeight="32.0" prefWidth="70.0" text="Cancel" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="210.0" layoutY="73.0" prefHeight="102.0" prefWidth="447.0">
+         <children>
+            <Label layoutX="5.0" layoutY="22.0" text="Search" />
+            <JFXComboBox fx:id="cmbSearch" focusColor="#153db5" layoutX="220.0" layoutY="16.0" prefHeight="29.0" prefWidth="108.0" promptText="Search by" visibleRowCount="3" />
+            <JFXButton fx:id="btnSearch" layoutX="338.0" layoutY="22.0" prefHeight="32.0" prefWidth="101.0" ripplerFill="#e87878" text="Search" textAlignment="CENTER" />
+            <TextField fx:id="txtSearch" layoutX="60.0" layoutY="18.0" prefHeight="26.0" prefWidth="142.0" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnChPass" layoutX="476.0" layoutY="585.0" prefHeight="29.0" prefWidth="183.0" text="Change my password" textAlignment="CENTER" />
+      <Pane fx:id="pneChPass" layoutX="709.0" layoutY="555.0" prefHeight="112.0" prefWidth="447.0" style="-fx-background-color: #EEEEEE;">
+         <children>
+            <JFXPasswordField fx:id="txtNP" layoutX="14.0" layoutY="26.0" prefHeight="26.0" prefWidth="174.0" />
+            <JFXPasswordField fx:id="txtRNP" layoutX="14.0" layoutY="72.0" prefHeight="26.0" prefWidth="174.0" />
+            <JFXPasswordField fx:id="txtCP" layoutX="241.0" layoutY="26.0" prefHeight="26.0" prefWidth="183.0" />
+            <Label layoutX="14.0" layoutY="5.0" text="New password" />
+            <Label layoutX="14.0" layoutY="56.0" text="Re-Enter new password" />
+            <Label layoutX="241.0" layoutY="6.0" text="Current password" />
+            <JFXButton fx:id="btnSNP" layoutX="252.0" layoutY="65.0" text="Change password" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

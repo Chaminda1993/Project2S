@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="pane" stylesheets="@style.css" maxHeight="-1.0" maxWidth="-1.0" prefHeight="604.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddSupplierController">
+   <children>
+      <Label layoutX="232.0" layoutY="65.0" prefHeight="47.0" prefWidth="200.0" text="New Supplier" textAlignment="JUSTIFY" underline="true">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="117.0" layoutY="141.0" prefHeight="339.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="29.0" layoutY="35.0" text="SID" />
+            <Label layoutX="29.0" layoutY="82.0" text="Name" />
+            <Label layoutX="25.0" layoutY="275.0" text="Address" />
+            <Label layoutX="29.0" layoutY="182.0" text="TelNo" />
+            <Label layoutX="27.0" layoutY="229.0" text="Balance" />
+            <Label layoutX="31.0" layoutY="132.0" text="Email" />
+            <JFXTextField fx:id="saveId" focusColor="#2316c4" layoutX="110.0" layoutY="14.0" prefHeight="31.0" prefWidth="265.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="saveName" focusColor="#2316c4" layoutX="110.0" layoutY="66.0" prefHeight="26.0" prefWidth="265.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="saveEmail" focusColor="#2316c4" layoutX="110.0" layoutY="111.0" prefHeight="26.0" prefWidth="265.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="saveTel" focusColor="#2316c4" layoutX="110.0" layoutY="161.0" prefHeight="26.0" prefWidth="265.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="saveBalance" focusColor="#2316c4" layoutX="110.0" layoutY="208.0" prefHeight="26.0" prefWidth="265.0" unFocusColor="#727171" />
+            <JFXTextField fx:id="saveAddress" focusColor="#2316c4" layoutX="110.0" layoutY="259.0" prefHeight="26.0" prefWidth="265.0" unFocusColor="#727171" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="saveButton" layoutX="402.0" layoutY="489.0" prefHeight="47.0" prefWidth="115.0" ripplerFill="#e87878" text="Save" textAlignment="CENTER" />
+      <JFXButton fx:id="clearButton" layoutX="117.0" layoutY="489.0" prefHeight="47.0" prefWidth="115.0" ripplerFill="#e87878" text="Clear" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

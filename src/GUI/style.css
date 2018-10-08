@@ -1,0 +1,52 @@
+
+.button {
+    -fx-border-radius: 10px;
+    -fx-font-family: Arial;
+    -fx-color: #ffffff;
+    -fx-background-color: #84c3ec;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-border-style: solid;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-color:#84b0ce;
+    -fx-cursor:HAND;
+}
+.button:hover, .button:focus, .button:active {
+    -fx-background-color: #50b9ff;
+    -fx-border-color:#0099ff;
+    -fx-font-weight: bold;
+}
+
+.button-menu {
+    -fx-border-radius: 10px;
+    -fx-font-family: Arial;
+    -fx-color: #ffffff;
+    -fx-background-color: #8fbbd8;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-cursor:HAND;
+}
+.button-menu:hover, .button-menu:focus, .button-menu:active {
+    -fx-background-color: #67baf1;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-font-weight: bold;
+}
+
+.page {
+    -fx-background-color: #bdc3c7;
+    -fx-border-color: #7f8c8d;
+    -fx-border-width: 3px;
+    -fx-border-style: solid;
+    -fx-border-radius: .6em;
+}
+
+.pane{
+    -fx-background-color:#a8bbce;
+    -fx-border-color: #79f2ff;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: .3em;
+}
+
+.textfield{
+    -fx-background-color:#a8bbce;
+}
